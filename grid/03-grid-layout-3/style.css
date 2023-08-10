@@ -89,3 +89,54 @@
   font-size: 13px;
   font-weight: normal;
 }
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 3px;
+}
+
+.header{
+  grid-column: 1/3;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
+
+.logo{
+  justify-self: start;
+}
+
+.menu > ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  list-style-type: none;
+}
+
+.sidebar {
+  grid-row: 2/4;
+  display: grid;
+  gap: 50px;
+}
+
+.side-content, .photo {
+  display: grid;
+  align-items: center;
+}
+
+.nav > ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style-type: none;
+}
+
+.article {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 200px;
+  gap: 15px;
+}
+
+.footer {
+  grid-column: 1/3;
+}
